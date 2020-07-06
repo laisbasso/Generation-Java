@@ -1,10 +1,12 @@
 package Aula1;
 
+import java.text.DecimalFormat;
 import java.util.Scanner;
 
 public class DistanciaDosPontos {
 	public static void main(String[] args) {
 		Scanner teclado = new Scanner(System.in);
+		DecimalFormat df = new DecimalFormat("##.00");
 		double x1, x2, y1, y2, d;
 		
 		System.out.println("Preencha as coordenadas do Ponto 1:");
@@ -19,7 +21,7 @@ public class DistanciaDosPontos {
 		y2 = teclado.nextInt();
 		
 		d = Math.sqrt(Math.pow((x2-x1),2) + Math.pow((y2-y1),2));
-		System.out.printf("A distância entre os dois pontos é de " + d);
+		System.out.printf("A distância entre os dois pontos é de " + df.format(d));
 		
 	}
 }

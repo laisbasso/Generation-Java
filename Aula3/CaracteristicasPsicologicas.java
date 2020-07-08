@@ -33,8 +33,9 @@ public class CaracteristicasPsicologicas {
 				
 			} else if (sexo == 2 && opcao == 3) {
 				homensAgressivos++;
-				
-			} else if (opcao == 2 && idade > 40) {
+			}
+			
+			if (opcao == 2 && idade > 40) {
 				nervososMaiores40++;
 			}			
 	

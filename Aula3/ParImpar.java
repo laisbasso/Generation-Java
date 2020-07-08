@@ -9,7 +9,7 @@ public class ParImpar {
 		int num, pares = 0, impares = 0;
 		
 		for (int i = 1; i < 11; i++) {
-			System.out.printf("Entre com o %d número: ", i);
+			System.out.printf("Entre com o %dº número: ", i);
 			num = teclado.nextInt();
 			if (num % 2 == 0) {
 				pares++;

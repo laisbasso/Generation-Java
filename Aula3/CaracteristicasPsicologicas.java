@@ -9,7 +9,7 @@ public class CaracteristicasPsicologicas {
 		int i = 0, idade, sexo, opcao, totalCalmos = 0, mulheresNervosas = 0,
 				homensAgressivos = 0, nervososMaiores40 = 0, calmosMenores18 = 0;
 				
-		while (i < 150) {
+		while (i < 5) {
 			i++;
 			System.out.printf("\nEntre com sua idade: ");
 			idade = teclado.nextInt();
@@ -23,19 +23,21 @@ public class CaracteristicasPsicologicas {
 			
 			if (opcao == 1) {
 				totalCalmos++;
-			}		
-			if (sexo == 1 && opcao == 2) {
+				
+				if(idade < 18) {
+					calmosMenores18++;
+				}
+				
+			} else if (sexo == 1 && opcao == 2) {
 				mulheresNervosas++;
-			}
-			if (sexo == 2 && opcao == 3) {
+				
+			} else if (sexo == 2 && opcao == 3) {
 				homensAgressivos++;
-			}			
-			if (opcao == 2 && idade > 40) {
+				
+			} else if (opcao == 2 && idade > 40) {
 				nervososMaiores40++;
 			}			
-			if (opcao == 1 && idade < 18) {
-				calmosMenores18++;
-			}		
+	
 		}
 		
 		System.out.println("\nResultado da pesquisa \n");

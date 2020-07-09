@@ -103,6 +103,9 @@ public class Array04 {
 				}
 			}				
 			break;
+		
+		default:
+			System.out.printf("\nOpção inválida!");
 			
 		}
 		

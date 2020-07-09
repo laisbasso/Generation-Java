@@ -12,27 +12,23 @@ public class Array02 {
 		for (int i = 0; i < 6; i++) {
 			System.out.printf("Entre com o %dº valor: ", i+1);
 			array[i] = teclado.nextInt();
-			
-			if (array[i] % 2 == 0){
-				somaPares += array[i];
-			} else {
-				totalImpares++;
-			}
 		}
 		
 		System.out.printf("\nNúmeros pares digitados: ");		
-		for (int i : array) {
-			if (i % 2 == 0) {
-				System.out.print(i);
+		for (int x : array) {
+			if (x % 2 == 0) {
+				System.out.print(x + " ");
+				somaPares += x;
 			}
 		}
 		
-		System.out.println("\bSoma dos números pares: " + somaPares);
+		System.out.println("\nSoma dos números pares: " + somaPares);
 		
 		System.out.printf("Números ímpares digitados: ");		
-		for (int i : array) {
-			if (i % 2 == 1) {
-				System.out.print(i);
+		for (int x : array) {
+			if (x % 2 == 1) {
+				System.out.print(x + " ");
+				totalImpares++;
 			}
 		}
 		

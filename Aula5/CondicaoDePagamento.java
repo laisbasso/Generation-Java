@@ -11,15 +11,15 @@ public class CondicaoDePagamento {
 		float precoEtiqueta, precoFinal;
 		int opcao, parcelas;
 		
-		System.out.println("Escolha a condição de pagamento");
+		System.out.printf("Entre com o valor de etiqueta do produto: ");
+		precoEtiqueta = teclado.nextInt();
+		System.out.println("\nEscolha a condição de pagamento");
 		System.out.println("\n[1] À vista em dinheiro ou cheque, recebe 20% de desconto");
 		System.out.println("[2] À vista no cartão de crédito, recebe 15% de desconto");
 		System.out.println("[3] Em duas vezes, preço normal de etiqueta sem juros");
 		System.out.println("[4] Em três vezes, preço normal de etiqueta mais juros de 10%");
 		System.out.printf("\nDigite a opção escolhida: ");
 		opcao = teclado.nextInt();
-		System.out.printf("\nEntre com o valor de etiqueta do produto: ");
-		precoEtiqueta = teclado.nextInt();
 		
 		switch (opcao){
 			
@@ -43,7 +43,11 @@ public class CondicaoDePagamento {
 			parcelas = 3;
 			precoFinal = ((precoEtiqueta * 110 / 100) / parcelas);
 			System.out.printf("\nO valor final é de " + parcelas + " parcelas de R$ " + df.format(precoFinal) + " cada.");
-			break;		
+			break;
+			
+		default:
+			System.out.printf("\nOpção inválida!");
+			
 		}
 		
 	}

@@ -21,11 +21,9 @@ public class Cliente {
 		cep = nCep;			
 	}
 	
-	public String dadosCliente() {
-		String mensagem = ("Cliente: " + nome + " " + sobrenome + "\nCPF: " + cpf + "\nEndereço: "
+	public void dadosCliente() {
+		System.out.println("Cliente: " + nome + " " + sobrenome + "\nCPF: " + cpf + "\nEndereço: "
 							+ endereco + "\nNº: " + numCasa + "\nCEP: " + cep);
-		System.out.println(mensagem);
-		return mensagem;
 	}
 	
 	public void adicionarAoCarrinho(int codP, int qtdP, float valorP) {
@@ -35,10 +33,9 @@ public class Cliente {
 		System.out.println("Adicionado com sucesso!");
 	}
 	
-	public float finalizarCompra() {
+	public void finalizarCompra() {
 		totalCompra = (qtdProduto * valorProduto);
 		System.out.println("O valor total da compra é R$" + totalCompra);
-		return totalCompra;
 	}
 
 	public static void main(String[] args) {

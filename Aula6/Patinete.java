@@ -17,7 +17,7 @@ public class Patinete {
 		taxa = 5;
 	}
 	
-	public float usar(int c, float h) {
+	public void usar(int c, float h) {
 		if (h < 1) {
 			System.out.println("Reserva mínima de 1 hora.");		
 		} else {
@@ -29,7 +29,6 @@ public class Patinete {
 			System.out.println("Patinete nº " + cod + " reservado com sucesso!");
 			System.out.println("Total a pagar: R$" + df.format(precoFinal));
 		}
-		return precoFinal;
 	}
 	
 	public void devolver(int c) {

@@ -22,11 +22,9 @@ public class Aviao {
 		vagas = v;
 	}
 	
-	public String statusViagem() {
-		String mensagem = ("Avião " + codAviao + " pertencente a " + empresa + " possui " + vagas +
+	public void statusViagem() {
+		System.out.println("Avião " + codAviao + " pertencente a " + empresa + " possui " + vagas +
 				" assentos livres para a rota de " + endPartida + " até " + endDestino + ".\nPossui escala? " + escala);				
-		System.out.println(mensagem);
-		return mensagem;
 	}
 	
 	public static void main(String[] args) {

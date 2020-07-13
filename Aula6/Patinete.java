@@ -40,13 +40,5 @@ public class Patinete {
 	public void status() {
 		System.out.println("Patinetes disponíveis: " + disponiveis + "\nPatinetes ocupados: " + ocupados);
 	}
-	
-	public static void main(String[] args) {
-		Patinete p = new Patinete();
-		p.usar(15468, 1.5f);
-		p.status();
-		p.devolver(15468);
-		p.status();
-	}
 
 }

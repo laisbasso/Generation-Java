@@ -124,17 +124,6 @@ public class ContaBancaria {
         System.out.println("Dono: " + this.getDono());
         System.out.println("Saldo: " + this.getSaldo());
         System.out.println("Conta disponível: " + this.isStatus());
-    }
-
-    public static void main(String[] args) {
-    	ContaBancaria c = new ContaBancaria();
-        c.setNumConta(111);
-        c.setDono("Marcos");
-        c.abrirConta("CC");
-        c.depositar(100);
-        c.sacar(150);
-        c.fecharConta();
-        c.info();
 	}
 
 }

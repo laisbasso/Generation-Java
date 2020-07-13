@@ -1,17 +1,17 @@
 package Aula6;
 
 public class Paciente {
-	String nome;
-	String sobrenome;
-	int idade;
-	String convenio;
-	String tipoSanguineo;
-	String medico;
-	String especialidade;
-	boolean prioridade;
-	String sintomas;
-	boolean marcouConsulta;
-	boolean passouTriagem;
+	private String nome;
+	private String sobrenome;
+	private int idade;
+	private String convenio;
+	private String tipoSanguineo;
+	private String medico;
+	private String especialidade;
+	private boolean prioridade;
+	private String sintomas;
+	private boolean marcouConsulta;
+	private boolean passouTriagem;
 	
 	public Paciente(String n, String s, int i, String tS) {
 		nome = n;

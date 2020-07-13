@@ -1,13 +1,13 @@
 package Aula6;
 
 public class Aviao {
-	String empresa;
-	String codAviao;
-	int numPassageiros;
-	String endPartida;
-	String endDestino;
-	boolean escala;
-	int vagas;
+	private String empresa;
+	private String codAviao;
+	private int numPassageiros;
+	private String endPartida;
+	private String endDestino;
+	private boolean escala;
+	private int vagas;
 	
 	public Aviao(String emp, String codA, int nPas) {
 		empresa = emp;

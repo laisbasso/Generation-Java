@@ -1,14 +1,14 @@
 package Aula6;
 
 public class Funcionario {
-	String nome;
-	String sobrenome;
-	int codFuncionario;
-	String empresa;
-	String cargo;
-	int ramal;
-	String gestor;
-	boolean contrato;
+	private String nome;
+	private String sobrenome;
+	private int codFuncionario;
+	private String empresa;
+	private String cargo;
+	private int ramal;
+	private String gestor;
+	private boolean contrato;
 	
 	public Funcionario(String n, String s){
 		nome = n;

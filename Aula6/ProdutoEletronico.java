@@ -1,16 +1,16 @@
 package Aula6;
 
 public class ProdutoEletronico {
-	int codProduto;
-	String material;
-	String cor;
-	float altura;
-	float largura;
-	float profundidade;
-	int qtdDisponivel;
-	int qtdReservada;
-	int qtdVendida;
-	int qtdVendaPontual;
+	private int codProduto;
+	private String material;
+	private String cor;
+	private float altura;
+	private float largura;
+	private float profundidade;
+	private int qtdDisponivel;
+	private int qtdReservada;
+	private int qtdVendida;
+	private int qtdVendaPontual;
 	
 	public ProdutoEletronico(int cP, String mat, String c, float alt, float larg, float prof, int qtdD) {
 		codProduto = cP;

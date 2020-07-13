@@ -4,12 +4,12 @@ import java.text.DecimalFormat;
 
 public class Patinete {
 	DecimalFormat df = new DecimalFormat("#.00");
-	int cod;
-	float taxa;
-	float precoFinal;
-	float horas;
-	int disponiveis;
-	int ocupados;
+	private int cod;
+	private float taxa;
+	private float precoFinal;
+	private float horas;
+	private int disponiveis;
+	private int ocupados;
 
 	public Patinete() {
 		disponiveis = 50;

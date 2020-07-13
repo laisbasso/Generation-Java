@@ -1,16 +1,15 @@
 package Aula6;
 
 public class Cliente {
-	String nome;
-	String sobrenome;
-	long cpf;
-	String endereco;
-	int numCasa;
-	int cep;
-	int codProduto;
-	int qtdProduto;
-	float valorProduto;
-	float totalCompra;
+	private String nome;
+	private String sobrenome;
+	private long cpf;
+	private String endereco;
+	private int numCasa;
+	private int cep;
+	private int qtdProduto;
+	private float valorProduto;
+	private float totalCompra;
 	
 	public Cliente(String n, String s, long nCpf, String end, int nCasa, int nCep) {
 		nome = n;
@@ -26,8 +25,7 @@ public class Cliente {
 							+ endereco + "\nNº: " + numCasa + "\nCEP: " + cep);
 	}
 	
-	public void adicionarAoCarrinho(int codP, int qtdP, float valorP) {
-		codProduto = codP;
+	public void adicionarAoCarrinho(int qtdP, float valorP) {
 		qtdProduto = qtdP;
 		valorProduto = valorP;	
 		System.out.println("Adicionado com sucesso!");

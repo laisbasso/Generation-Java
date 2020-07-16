@@ -11,18 +11,23 @@ public class Empregado extends Pessoa {
 	public int getCodigoSetor() {
 		return codigoSetor;
 	}
+	
 	public void setCodigoSetor(int codigoSetor) {
 		this.codigoSetor = codigoSetor;
 	}
+	
 	public float getSalarioBase() {
 		return salarioBase;
 	}
+	
 	public void setSalarioBase(float salarioBase) {
 		this.salarioBase = salarioBase;
 	}
+	
 	public float getImposto() {
 		return imposto;
 	}
+	
 	public void setImposto(float imposto) {
 		this.imposto = imposto;
 	}

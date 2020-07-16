@@ -7,18 +7,22 @@ public class Fornecedor extends Pessoa {
 	public double getValorCredito() {
 		return valorCredito;
 	}
+	
 	public void setValorCredito(double valorCredito) {
 		this.valorCredito = valorCredito;
 	}
+	
 	public double getValorDivida() {
 		return valorDivida;
 	}
+	
 	public void setValorDivida(double valorDivida) {
 		this.valorDivida = valorDivida;
 	}
 	
 	public void obterSaldo() {
-		System.out.print("Saldo de R$ " + (this.getValorCredito() - this.getValorDivida()));
+		double saldo = this.getValorCredito() - this.getValorDivida();
+		System.out.print("Saldo de R$ " + saldo);
 	}
 	
 }

@@ -14,6 +14,5 @@ public class EmpregadoTeste {
 		
 		System.out.println(e.toString());
 			
-		
 	}
 }

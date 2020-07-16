@@ -32,16 +32,25 @@ public class Estoque {
 			case 2:
 				System.out.printf("Entre com a informação que deseja remover da lista: ");
 				info = teclado.next();
-				dados.remove(info);
+				if (dados.contains(info)) {
+					dados.remove(info);
+				} else {
+					System.out.println("Informação inválida!");
+				}
 				break;
 				
 			case 3:
 				System.out.printf("Entre com a informação que deseja atualizar: ");
 				info = teclado.next();
-				dados.remove(info);
-				System.out.printf("Entre com a nova informação da lista: ");
-				info = teclado.next();
-				dados.add(info);
+				if (dados.contains(info)) {
+					dados.remove(info);
+					System.out.printf("Entre com a nova informação da lista: ");
+					info = teclado.next();
+					dados.add(info);
+				} else {
+					System.out.println("Informação inválida!");
+				}
+				
 				break;
 				
 			case 4:
@@ -51,8 +60,13 @@ public class Estoque {
 				break;
 			}
 			
-			System.out.println();
+			if (opcao > 5) {
+				System.out.println("Opção inválida!");
+				
+			}
 			
+			System.out.println();
+		
 		} while (opcao != 5);
 		
 	}
